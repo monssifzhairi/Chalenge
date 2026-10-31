@@ -1,0 +1,11 @@
+/*
+ * Maison Tiziri — stylesheet entry point
+ * base       → fonts, tokens, reset, typography, buttons, animation states
+ * layout     → announcement bar, header & mega menu, page heroes, footer
+ * components → product cards, grids, overlays, accordion, forms, widgets
+ * pages      → page-specific sections
+ */
+@import './base.css';
+@import './layout.css';
+@import './components.css';
+@import './pages.css';

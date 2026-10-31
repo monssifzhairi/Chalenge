@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- @include head -->
+    <title>Contact &amp; Boutiques — Maison Tiziri</title>
+    <meta name="description" content="Contact Maison Tiziri on WhatsApp, by phone or email, or visit our boutiques in Marrakech, Casablanca and Rabat and our atelier in Fès." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact &amp; Boutiques — Maison Tiziri" />
+    <meta property="og:description" content="Our stylists are here to advise you — on WhatsApp, by phone or in boutique." />
+  </head>
+  <body class="page-contact" data-page="contact">
+    <!-- @include header -->
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container page-hero__grid">
+          <div>
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <ol>
+                <li><a href="index.html">Home</a></li>
+                <li aria-current="page">Contact</li>
+              </ol>
+            </nav>
+            <h1 class="page-title" data-split>Contact <em>&amp; boutiques</em></h1>
+          </div>
+          <p class="page-intro" data-reveal>Our stylists are here to advise you on sizes, made-to-measure and orders — on WhatsApp, by phone or in one of our boutiques.</p>
+        </div>
+      </section>
+
+      <section class="contact section section--flush-top" aria-label="Contact channels and form">
+        <div class="container contact__grid">
+          <div class="contact__channels">
+            <a class="channel channel--primary" href="https://wa.me/{{whatsapp}}" data-wa="Hello Maison Tiziri, I would like some advice." target="_blank" rel="noopener" data-reveal>
+              <span class="channel__icon"><!-- @icon whatsapp 24 --></span>
+              <span class="channel__label">WhatsApp — the fastest way</span>
+              <span class="channel__value">{{phoneDisplay}}</span>
+              <span class="channel__note">A stylist replies within the hour, every day from 9:00 to 22:00.</span>
+              <span class="channel__arrow"><!-- @icon arrow-up-right 18 --></span>
+            </a>
+            <a class="channel" href="tel:+{{whatsapp}}" data-reveal>
+              <span class="channel__icon"><!-- @icon phone 22 --></span>
+              <span class="channel__label">Call the concierge</span>
+              <span class="channel__value">{{phoneDisplay}}</span>
+              <span class="channel__note">Monday to Saturday, 10:00 – 20:00.</span>
+              <span class="channel__arrow"><!-- @icon arrow-up-right 18 --></span>
+            </a>
+            <a class="channel" href="mailto:{{email}}" data-reveal>
+              <span class="channel__icon"><!-- @icon mail 22 --></span>
+              <span class="channel__label">Write to us</span>
+              <span class="channel__value">{{email}}</span>
+              <span class="channel__note">We reply within one working day.</span>
+              <span class="channel__arrow"><!-- @icon arrow-up-right 18 --></span>
+            </a>
+          </div>
+
+          <form class="contact-form" data-contact-form novalidate data-reveal>
+            <h2 class="contact-form__title">Send us a message</h2>
+            <p class="contact-form__intro">Write your message, then choose how to send it — WhatsApp or email.</p>
+
+            <div class="field-row">
+              <div class="field">
+                <input class="field__input" id="cf-name" name="name" type="text" autocomplete="name" placeholder=" " required />
+                <label class="field__label" for="cf-name">Full name</label>
+                <p class="field__error" id="cf-name-error"></p>
+              </div>
+              <div class="field">
+                <input class="field__input" id="cf-contact" name="contact" type="text" autocomplete="email" placeholder=" " required />
+                <label class="field__label" for="cf-contact">Email or phone</label>
+                <p class="field__error" id="cf-contact-error"></p>
+              </div>
+            </div>
+
+            <div class="field field--select">
+              <select class="field__input" id="cf-subject" name="subject" required>
+                <option value="" selected disabled hidden></option>
+                <option>An order or a delivery</option>
+                <option>Sizing advice</option>
+                <option>Made to measure</option>
+                <option>Alterations &amp; repairs</option>
+                <option>Press &amp; partnerships</option>
+                <option>Something else</option>
+              </select>
+              <label class="field__label" for="cf-subject">Subject</label>
+              <!-- @icon chevron-down 14 -->
+              <p class="field__error" id="cf-subject-error"></p>
+            </div>
+
+            <div class="field">
+              <textarea class="field__input" id="cf-message" name="message" rows="5" placeholder=" " required></textarea>
+              <label class="field__label" for="cf-message">Your message</label>
+              <p class="field__error" id="cf-message-error"></p>
+            </div>
+
+            <div class="contact-form__actions">
+              <button type="submit" class="btn btn--whatsapp" value="whatsapp"><!-- @icon whatsapp 18 --><span>Send via WhatsApp</span></button>
+              <button type="submit" class="btn btn--outline" value="email"><!-- @icon mail 18 --><span>Send by email</span></button>
+            </div>
+            <p class="contact-form__status" role="status" aria-live="polite" data-form-status></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="boutiques section section--alt" id="boutiques" aria-labelledby="boutiques-title">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-head__main">
+              <p class="eyebrow"><span class="eyebrow__num">01</span>Our addresses</p>
+              <h2 class="section-title" id="boutiques-title" data-split>Come and <em>see us</em></h2>
+            </div>
+            <div class="section-head__aside" data-reveal>
+              <p>Every boutique has a fitting salon. Book a visit for made-to-measure, or simply drop by for a glass of mint tea.</p>
+            </div>
+          </div>
+
+          <div class="boutiques__grid">
+            <article class="boutique" id="boutique-marrakech" data-reveal>
+              <p class="boutique__city">Marrakech</p>
+              <h3 class="boutique__name">Guéliz</h3>
+              <address class="boutique__address">54, Rue de la Liberté<br />Guéliz, Marrakech 40000</address>
+              <dl class="boutique__hours">
+                <div><dt>Mon – Sat</dt><dd>10:00 – 20:00</dd></div>
+                <div><dt>Sunday</dt><dd>11:00 – 19:00</dd></div>
+              </dl>
+              <p class="boutique__note">Flagship · fitting salon · made to measure</p>
+              <div class="boutique__links">
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=Rue+de+la+Libert%C3%A9%2C+Gu%C3%A9liz%2C+Marrakech" target="_blank" rel="noopener"><!-- @icon pin 16 --><span>Directions</span></a>
+                <a href="https://wa.me/{{whatsapp}}" data-wa="Hello Maison Tiziri, I would like to book a visit to your Marrakech boutique." target="_blank" rel="noopener"><!-- @icon calendar 16 --><span>Book a visit</span></a>
+              </div>
+            </article>
+
+            <article class="boutique" id="boutique-casablanca" data-reveal>
+              <p class="boutique__city">Casablanca</p>
+              <h3 class="boutique__name">Racine</h3>
+              <address class="boutique__address">18, Boulevard d’Anfa<br />Racine, Casablanca 20000</address>
+              <dl class="boutique__hours">
+                <div><dt>Mon – Sat</dt><dd>10:00 – 20:30</dd></div>
+                <div><dt>Sunday</dt><dd>Closed</dd></div>
+              </dl>
+              <p class="boutique__note">Women &amp; men · fitting salon</p>
+              <div class="boutique__links">
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=Boulevard+d%27Anfa%2C+Racine%2C+Casablanca" target="_blank" rel="noopener"><!-- @icon pin 16 --><span>Directions</span></a>
+                <a href="https://wa.me/{{whatsapp}}" data-wa="Hello Maison Tiziri, I would like to book a visit to your Casablanca boutique." target="_blank" rel="noopener"><!-- @icon calendar 16 --><span>Book a visit</span></a>
+              </div>
+            </article>
+
+            <article class="boutique" id="boutique-rabat" data-reveal>
+              <p class="boutique__city">Rabat</p>
+              <h3 class="boutique__name">Agdal</h3>
+              <address class="boutique__address">7, Avenue Fal Ould Oumeir<br />Agdal, Rabat 10090</address>
+              <dl class="boutique__hours">
+                <div><dt>Mon – Sat</dt><dd>10:00 – 20:00</dd></div>
+                <div><dt>Sunday</dt><dd>11:00 – 18:00</dd></div>
+              </dl>
+              <p class="boutique__note">Women &amp; men · video fittings studio</p>
+              <div class="boutique__links">
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=Avenue+Fal+Ould+Oumeir%2C+Agdal%2C+Rabat" target="_blank" rel="noopener"><!-- @icon pin 16 --><span>Directions</span></a>
+                <a href="https://wa.me/{{whatsapp}}" data-wa="Hello Maison Tiziri, I would like to book a visit to your Rabat boutique." target="_blank" rel="noopener"><!-- @icon calendar 16 --><span>Book a visit</span></a>
+              </div>
+            </article>
+
+            <article class="boutique boutique--atelier" id="atelier-fes" data-reveal>
+              <p class="boutique__city">Fès</p>
+              <h3 class="boutique__name">The atelier</h3>
+              <address class="boutique__address">Talaa Kebira<br />Fès el-Bali, Fès 30000</address>
+              <dl class="boutique__hours">
+                <div><dt>Mon – Fri</dt><dd>By appointment</dd></div>
+                <div><dt>Weekend</dt><dd>Closed</dd></div>
+              </dl>
+              <p class="boutique__note">Atelier visits &amp; couture fittings</p>
+              <div class="boutique__links">
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=Talaa+Kebira%2C+F%C3%A8s+el-Bali%2C+F%C3%A8s" target="_blank" rel="noopener"><!-- @icon pin 16 --><span>Directions</span></a>
+                <a href="https://wa.me/{{whatsapp}}" data-wa="Hello Maison Tiziri, I would like to arrange a visit to your atelier in Fès." target="_blank" rel="noopener"><!-- @icon calendar 16 --><span>Arrange a visit</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-faq section" aria-labelledby="contact-faq-title">
+        <div class="container contact-faq__grid">
+          <div class="contact-faq__head">
+            <figure class="contact-faq__media">
+              <div class="arch" data-media-reveal>
+                <img src="images/editorial/riad-fountain-462.webp" width="462" height="693" alt="Lanterns and a marble fountain in the riad courtyard at dusk" loading="lazy" decoding="async" />
+              </div>
+            </figure>
+          </div>
+          <div class="contact-faq__body">
+            <p class="eyebrow"><span class="eyebrow__num">02</span>Good to know</p>
+            <h2 class="section-title" id="contact-faq-title" data-split>Frequently <em>asked</em></h2>
+            <div class="accordion accordion--faq" data-accordion>
+              <details class="accordion__item">
+                <summary class="accordion__summary">How do I place an order?</summary>
+                <div class="accordion__content"><p>Add your pieces to the bag and tap “Order via WhatsApp”: your order is sent to our concierge, who confirms availability, delivery and payment with you personally. You can also order by phone or in boutique.</p></div>
+              </details>
+              <details class="accordion__item">
+                <summary class="accordion__summary">Do you deliver outside Morocco?</summary>
+                <div class="accordion__content"><p>Yes — we ship worldwide by DHL Express in 4 to 8 working days. International orders are paid in advance by secure card link. <a href="services.html#delivery">See delivery rates</a>.</p></div>
+              </details>
+              <details class="accordion__item">
+                <summary class="accordion__summary">Can I try a piece before buying?</summary>
+                <div class="accordion__content"><p>Of course. Every piece of the collection can be tried in our boutiques in Marrakech, Casablanca and Rabat. In Morocco, ready-to-wear pieces can also be exchanged within 14 days.</p></div>
+              </details>
+              <details class="accordion__item">
+                <summary class="accordion__summary">How long does made to measure take?</summary>
+                <div class="accordion__content"><p>Allow four to eight weeks depending on the embroidery, with two fittings in between. For weddings, we recommend contacting us three months ahead. <a href="maison.html#made-to-measure">How it works</a>.</p></div>
+              </details>
+            </div>
+            <a class="link-arrow" href="services.html#faq"><span>All questions</span><!-- @icon arrow-right 16 --></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- @include footer -->
+    <!-- @include overlays -->
+    <script type="module" src="/src/js/pages/contact.js"></script>
+  </body>
+</html>
