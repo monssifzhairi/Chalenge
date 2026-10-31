@@ -1,0 +1,15 @@
+# Dependencies & build output
+node_modules/
+dist/
+
+# High-resolution master photography (kept out of Git; optimised
+# derivatives live in public/images and are committed)
+source-images/
+
+# Logs & OS / editor files
+npm-debug.log*
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

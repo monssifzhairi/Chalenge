@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- @include head -->
+    <title>The Collection — Maison Tiziri</title>
+    <meta name="description" content="Shop handmade Moroccan kaftans, takchitas, djellabas, gandouras and babouches from Maison Tiziri. Prices in MAD, delivery across Morocco and payment on delivery." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Collection — Maison Tiziri" />
+    <meta property="og:description" content="Kaftans, takchitas, djellabas and babouches, made by hand in Fès." />
+  </head>
+  <body class="page-shop" data-page="shop">
+    <!-- @include header -->
+
+    <main id="main">
+      <section class="page-hero page-hero--shop">
+        <div class="container page-hero__grid">
+          <div>
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li aria-current="page" data-shop-crumb>The Collection</li>
+              </ol>
+            </nav>
+            <h1 class="page-title" data-shop-title>The Collection</h1>
+          </div>
+          <p class="page-intro" data-shop-intro>Nine pieces from Clair de Lune and our permanent wardrobe — each one cut, embroidered and finished by hand in our atelier in the Fès medina.</p>
+        </div>
+      </section>
+
+      <div class="shop-bar" data-shop-bar>
+        <div class="container shop-bar__inner">
+          <div class="filters" role="group" aria-label="Filter by category" data-filters>
+            <!-- @render shop-filters -->
+          </div>
+          <div class="shop-bar__tools">
+            <p class="shop-bar__count" aria-live="polite" data-shop-count>9 pieces</p>
+            <label class="select">
+              <span class="sr-only">Sort by</span>
+              <select data-sort>
+                <option value="featured">Featured</option>
+                <option value="price-asc">Price: low to high</option>
+                <option value="price-desc">Price: high to low</option>
+              </select>
+              <!-- @icon chevron-down 14 -->
+            </label>
+            <div class="density" role="group" aria-label="Grid layout">
+              <button type="button" class="density__btn" data-density="2" aria-pressed="false" aria-label="Larger images"><!-- @icon grid-2 18 --></button>
+              <button type="button" class="density__btn is-active" data-density="4" aria-pressed="true" aria-label="Standard grid"><!-- @icon grid-4 18 --></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="shop container" aria-labelledby="shop-grid-title">
+        <h2 class="sr-only" id="shop-grid-title">The pieces</h2>
+        <div class="shop-grid" data-shop-grid data-density="4" data-card-grid>
+          <!-- @render shop-grid -->
+        </div>
+        <div class="shop-empty" data-shop-empty hidden>
+          <p class="shop-empty__title">Nothing here — yet.</p>
+          <p>Our maâlems are working on new pieces for this category. In the meantime, explore the full collection.</p>
+          <button type="button" class="btn" data-filter-reset><span>View all pieces</span></button>
+        </div>
+      </section>
+
+      <section class="mtm-band" aria-labelledby="mtm-band-title">
+        <div class="container mtm-band__grid">
+          <div class="mtm-band__media">
+            <div class="mtm-band__img" data-media-reveal>
+              <img src="images/products/kaftan-yasmine-detail-640.webp" srcset="images/products/kaftan-yasmine-detail-480.webp 480w, images/products/kaftan-yasmine-detail-640.webp 640w" sizes="(min-width: 900px) 30vw, 80vw" width="640" height="800" alt="Detail of hand-braided gold sfifa and knotted buttons on an ivory silk kaftan" loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <div class="mtm-band__content">
+            <p class="eyebrow eyebrow--light">Sur mesure</p>
+            <h2 class="section-title section-title--light" id="mtm-band-title" data-split>Every piece, <em>made to your measure</em></h2>
+            <p data-reveal>Choose a model from the collection — or bring us an idea — and our atelier will cut it to your measurements, in the fabric and embroidery of your choice. Fittings in Marrakech, Casablanca and Rabat, or by video call wherever you are.</p>
+            <div class="mtm-band__ctas" data-reveal>
+              <a class="btn btn--light" href="https://wa.me/{{whatsapp}}" data-wa="Hello Maison Tiziri, I would like to book a made-to-measure appointment." target="_blank" rel="noopener" data-magnetic><span>Book a fitting</span></a>
+              <a class="link-arrow link-arrow--light" href="maison.html#made-to-measure"><span>How it works</span><!-- @icon arrow-right 16 --></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-strip" aria-label="Our services">
+        <div class="container services-strip__grid">
+          <a class="service" href="services.html#delivery" data-reveal>
+            <!-- @icon truck 28 -->
+            <h3 class="service__title">Complimentary delivery</h3>
+            <p class="service__text">Across Morocco from 1,500&nbsp;MAD, in 24 to 72 hours.</p>
+          </a>
+          <a class="service" href="services.html#payment" data-reveal>
+            <!-- @icon banknote 28 -->
+            <h3 class="service__title">Pay on delivery</h3>
+            <p class="service__text">Cash or card at your door — no card details online.</p>
+          </a>
+          <a class="service" href="services.html#size-guide" data-reveal>
+            <!-- @icon ruler 28 -->
+            <h3 class="service__title">Find your size</h3>
+            <p class="service__text">Detailed size guides, and stylists on WhatsApp to advise you.</p>
+          </a>
+          <a class="service" href="services.html#returns" data-reveal>
+            <!-- @icon returns 28 -->
+            <h3 class="service__title">14-day exchanges</h3>
+            <p class="service__text">Free exchanges in Morocco on all ready-to-wear pieces.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- @include footer -->
+    <!-- @include overlays -->
+    <script type="module" src="/src/js/pages/shop.js"></script>
+  </body>
+</html>

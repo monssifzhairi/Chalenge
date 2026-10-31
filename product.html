@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- @include head -->
+    <title>The Collection — Maison Tiziri</title>
+    <meta name="description" content="Handmade Moroccan couture by Maison Tiziri — embroidered in our Fès atelier, delivered across Morocco with payment on delivery." />
+    <meta property="og:type" content="product" />
+    <meta property="og:title" content="Maison Tiziri" />
+  </head>
+  <body class="page-product" data-page="product">
+    <!-- @include header -->
+
+    <main id="main">
+      <div class="container">
+        <nav class="breadcrumb pdp-crumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html" data-pdp-crumb-cat>The Collection</a></li>
+            <li aria-current="page" data-pdp-crumb-name>Piece</li>
+          </ol>
+        </nav>
+      </div>
+
+      <article class="pdp container" data-pdp aria-busy="true">
+        <div class="pdp__gallery" data-gallery>
+          <div class="pdp__track" data-gallery-track>
+            <figure class="pdp__shot pdp__shot--main" data-zoom>
+              <img class="pdp__img" data-pdp-main width="1100" height="1375" alt="" fetchpriority="high" decoding="async" />
+            </figure>
+            <figure class="pdp__shot">
+              <img class="pdp__img" data-pdp-detail width="640" height="800" alt="" loading="lazy" decoding="async" />
+              <figcaption class="pdp__shot-label">The detail</figcaption>
+            </figure>
+          </div>
+          <div class="pdp__dots" aria-hidden="true" data-gallery-dots><span class="is-active"></span><span></span></div>
+        </div>
+
+        <div class="pdp__info">
+          <div class="pdp__panel">
+            <p class="eyebrow pdp__eyebrow" data-pdp-eyebrow>Clair de Lune · Autumn–Winter 2026</p>
+            <h1 class="pdp__name" data-pdp-name>&nbsp;</h1>
+            <p class="pdp__price" data-pdp-price>&nbsp;</p>
+            <p class="pdp__summary" data-pdp-summary></p>
+            <p class="pdp__mto" data-pdp-mto hidden><!-- @icon clock 15 --><span></span></p>
+
+            <div class="pdp__row">
+              <span class="pdp__label">Colour</span>
+              <span class="pdp__colour"><span class="pdp__swatch" data-pdp-swatch></span><span data-pdp-colour></span></span>
+            </div>
+
+            <fieldset class="pdp__sizes" data-pdp-size-field>
+              <legend class="sr-only">Choose a size</legend>
+              <div class="pdp__row">
+                <span class="pdp__label" aria-hidden="true">Size</span>
+                <button type="button" class="pdp__guide-btn" aria-haspopup="dialog" aria-controls="size-guide" data-size-guide-open><!-- @icon ruler 15 --><span>Size guide</span></button>
+              </div>
+              <div class="size-options" data-pdp-sizes></div>
+              <p class="pdp__stock" aria-live="polite" data-pdp-stock></p>
+            </fieldset>
+
+            <div class="pdp__actions">
+              <button class="btn btn--block btn--lg" type="button" data-add-to-bag><span>Add to bag</span></button>
+              <a class="btn btn--outline btn--block btn--lg" href="https://wa.me/{{whatsapp}}" target="_blank" rel="noopener" data-pdp-wa>
+                <!-- @icon whatsapp 18 --><span>Order on WhatsApp</span>
+              </a>
+            </div>
+
+            <ul class="pdp__assurances">
+              <li><!-- @icon truck 18 --><span>Delivered in 24–72&nbsp;h across Morocco — <strong data-pdp-shipping>complimentary</strong></span></li>
+              <li><!-- @icon banknote 18 --><span>Pay on delivery, in cash or by card</span></li>
+              <li><!-- @icon scissors 18 --><span>Free alterations in boutique · made to measure on request</span></li>
+            </ul>
+
+            <div class="accordion" data-accordion>
+              <details class="accordion__item" open>
+                <summary class="accordion__summary">Description</summary>
+                <div class="accordion__content"><p data-pdp-description></p></div>
+              </details>
+              <details class="accordion__item">
+                <summary class="accordion__summary">Details &amp; craftsmanship</summary>
+                <div class="accordion__content">
+                  <ul class="pdp__details" data-pdp-details></ul>
+                  <p class="pdp__hours" data-pdp-hours></p>
+                </div>
+              </details>
+              <details class="accordion__item">
+                <summary class="accordion__summary">Composition &amp; care</summary>
+                <div class="accordion__content">
+                  <p data-pdp-composition></p>
+                  <p data-pdp-care></p>
+                </div>
+              </details>
+              <details class="accordion__item">
+                <summary class="accordion__summary">Delivery &amp; returns</summary>
+                <div class="accordion__content">
+                  <p>Complimentary delivery across Morocco on orders from 1,500&nbsp;MAD (45&nbsp;MAD below), in 24–48&nbsp;h to Casablanca, Rabat, Salé, Marrakech and Fès and 48–72&nbsp;h elsewhere. International delivery by DHL Express in 4–8 working days.</p>
+                  <p>Ready-to-wear pieces can be exchanged within 14 days, free of charge in Morocco. Made-to-order and made-to-measure pieces are final. <a href="services.html#delivery">Delivery</a> · <a href="services.html#returns">Returns &amp; exchanges</a></p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <section class="pdp-missing container" data-pdp-missing hidden>
+        <p class="eyebrow">Piece not found</p>
+        <h1 class="page-title">This piece has left the atelier</h1>
+        <p class="page-intro">The link may be outdated, or the piece is no longer available. Our full collection is waiting for you.</p>
+        <a class="btn" href="shop.html"><span>View the collection</span></a>
+      </section>
+
+      <noscript>
+        <div class="container noscript-note">
+          <p>This page needs JavaScript to display the piece. You can still <a href="shop.html">browse the full collection</a> or <a href="contact.html">contact our concierge</a>.</p>
+        </div>
+      </noscript>
+
+      <section class="related section" aria-labelledby="related-title" data-related>
+        <div class="container">
+          <div class="section-head section-head--compact">
+            <h2 class="section-title section-title--sm" id="related-title">You may also <em>like</em></h2>
+            <a class="link-arrow" href="shop.html"><span>View all pieces</span><!-- @icon arrow-right 16 --></a>
+          </div>
+          <div class="related-grid" data-related-grid data-card-grid></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="pdp-bar" data-pdp-bar>
+      <div class="pdp-bar__info">
+        <span class="pdp-bar__name" data-pdp-bar-name></span>
+        <span class="pdp-bar__price" data-pdp-bar-price></span>
+      </div>
+      <button class="btn" type="button" data-pdp-bar-add><span>Add to bag</span></button>
+    </div>
+
+    <dialog class="modal" id="size-guide" aria-labelledby="size-guide-title" data-size-guide>
+      <div class="modal__panel">
+        <header class="modal__head">
+          <h2 class="modal__title" id="size-guide-title">Size guide</h2>
+          <button class="icon-btn" type="button" aria-label="Close size guide" data-size-guide-close><!-- @icon close 24 --></button>
+        </header>
+        <div class="modal__body" data-lenis-prevent>
+          <div class="modal__toolbar">
+            <p class="modal__subtitle" data-size-guide-subtitle></p>
+            <div class="unit-toggle" role="group" aria-label="Measurement units">
+              <button type="button" class="unit-toggle__btn is-active" data-unit="cm" aria-pressed="true">cm</button>
+              <button type="button" class="unit-toggle__btn" data-unit="in" aria-pressed="false">in</button>
+            </div>
+          </div>
+          <div class="table-wrap" data-size-guide-table></div>
+          <p class="modal__note" data-size-guide-note></p>
+          <div class="howto">
+            <h3 class="howto__title">How to measure</h3>
+            <ul class="howto__list">
+              <li><strong>Bust / chest</strong> — around the fullest part, keeping the tape horizontal.</li>
+              <li><strong>Waist</strong> — around the natural waistline, the narrowest part of the torso.</li>
+              <li><strong>Hips</strong> — around the fullest part, feet together.</li>
+              <li><strong>Foot length</strong> — heel to longest toe, standing, at the end of the day.</li>
+            </ul>
+          </div>
+          <a class="link-arrow" href="https://wa.me/{{whatsapp}}" data-wa="Hello Maison Tiziri, could you help me choose my size?" target="_blank" rel="noopener"><span>Still unsure? Ask a stylist on WhatsApp</span><!-- @icon arrow-right 16 --></a>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- @include footer -->
+    <!-- @include overlays -->
+    <script type="module" src="/src/js/pages/product.js"></script>
+  </body>
+</html>

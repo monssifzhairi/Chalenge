@@ -1,0 +1,13 @@
+{
+  "name": "Maison Tiziri",
+  "short_name": "Tiziri",
+  "description": "Moroccan couture, embroidered by hand in Fès.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4efe7",
+  "theme_color": "#f4efe7",
+  "icons": [
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
